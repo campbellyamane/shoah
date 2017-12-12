@@ -1,0 +1,1 @@
+FOR %i IN (*.mp3) DO ffmpeg -i "%i" -lavfi showspectrumpic=s=960x540 %i.png

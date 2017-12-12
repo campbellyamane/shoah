@@ -1,0 +1,2 @@
+FOR %i IN (*.mp3) DO ffmpeg -y -i "%i" -lavfi showspectrumpic=s=1000x512:mode=combined:color=rainbow:gain=0.5 "%i.png"
+
